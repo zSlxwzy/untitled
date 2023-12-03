@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "database");
+$conn = mysqli_connect("194.104.156.218", "u33231_gDm109Wjaw", "G4QJ5L.qEo+iN5jD@vwbyF@r", "s33231_clase");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
