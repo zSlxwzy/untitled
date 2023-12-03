@@ -10,13 +10,6 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
     exit;
 }
 
-$checker = new \misc\PasswordChecker();
-if(!$checker->check($_POST["password"])) {
-    echo "Funca";
-} else {
-    echo "nofunca";
-}
-
 if (isset($_POST["login_username"]) && isset($_POST["login_password"])) {
     $username = $_POST["login_username"];
     $password = $_POST["login_password"];
